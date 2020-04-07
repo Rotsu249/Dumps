@@ -1,0 +1,2 @@
+garbage-queried-images
+non-garbage-queried-images

@@ -881,6 +881,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_capture_image
+layout activity_image_view
 layout activity_main
 layout notification_action
 layout notification_action_tombstone

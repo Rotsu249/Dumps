@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Rohit\\AndroidStudioProjects\\MyApplication14\\Dumps\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-km\\values-km.xml",
+            "outputFile": "C:\\Users\\Rohit\\Desktop\\Dumps\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-km\\values-km.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Rohit\\.gradle\\caches\\transforms-2\\files-2.1\\322b93496bc0a8d8306a6c7db877b529\\appcompat-1.0.2\\res\\values-km\\values-km.xml",
