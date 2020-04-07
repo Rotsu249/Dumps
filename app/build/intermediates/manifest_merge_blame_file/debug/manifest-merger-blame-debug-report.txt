@@ -1,0 +1,210 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.dumps"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml
+10
+11    <uses-feature
+11-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:6:5-8:35
+12        android:name="android.hardware.camera"
+12-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:7:9-47
+13        android:required="true" />
+13-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:8:9-32
+14
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+15-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:10:5-81
+15-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:10:22-78
+16    <uses-permission android:name="android.permission.CAMERA" />
+16-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:11:5-65
+16-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:11:22-62
+17
+18    <!-- Required permission for App measurement to run. -->
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:23:5-67
+19-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:23:22-64
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:24:5-79
+20-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:24:22-76
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:25:5-68
+21-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:25:22-65
+22    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+22-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:26:5-110
+22-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:26:22-107
+23    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+23-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+23-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+24
+25    <application
+25-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:13:5-40:19
+26        android:allowBackup="true"
+26-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:14:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.0.1] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\75e70da198df93807ed751edcaee621f\core-1.0.1\AndroidManifest.xml:22:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:15:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:16:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:17:9-54
+32        android:supportsRtl="true"
+32-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:18:9-35
+33        android:testOnly="true"
+34        android:theme="@style/AppTheme" >
+34-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:19:9-40
+35        <activity android:name="com.example.dumps.CaptureImage" />
+35-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:21:9-50
+35-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:21:19-47
+36
+37        <provider
+37-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:23:9-31:20
+38            android:name="androidx.core.content.FileProvider"
+38-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:24:13-62
+39            android:authorities="com.example.dumps.fileprovider"
+39-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:25:13-65
+40            android:exported="false"
+40-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:26:13-37
+41            android:grantUriPermissions="true" >
+41-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:27:13-47
+42            <meta-data
+42-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:28:13-30:53
+43                android:name="android.support.FILE_PROVIDER_PATHS"
+43-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:29:17-67
+44                android:resource="@xml/file_path" />
+44-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:30:17-50
+45        </provider>
+46
+47        <activity android:name="com.example.dumps.MainActivity" >
+47-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:33:9-39:20
+47-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:33:19-47
+48            <intent-filter>
+48-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:34:13-38:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:35:17-69
+49-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:35:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:37:17-77
+51-->C:\Users\Rohit\AndroidStudioProjects\MyApplication14\Dumps\app\src\main\AndroidManifest.xml:37:27-74
+52            </intent-filter>
+53        </activity>
+54
+55        <receiver
+55-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:29:9-33:20
+56            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+56-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:30:13-85
+57            android:enabled="true"
+57-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:31:13-35
+58            android:exported="false" >
+58-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:32:13-37
+59        </receiver>
+60        <receiver
+60-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:34:9-42:20
+61            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+61-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:35:13-100
+62            android:enabled="true"
+62-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:36:13-35
+63            android:exported="true"
+63-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:37:13-36
+64            android:permission="android.permission.INSTALL_PACKAGES" >
+64-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:38:13-69
+65            <intent-filter>
+65-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:39:13-41:29
+66                <action android:name="com.android.vending.INSTALL_REFERRER" />
+66-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:40:17-79
+66-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:40:25-76
+67            </intent-filter>
+68        </receiver>
+69
+70        <service
+70-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:44:9-47:40
+71            android:name="com.google.android.gms.measurement.AppMeasurementService"
+71-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:45:13-84
+72            android:enabled="true"
+72-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:46:13-35
+73            android:exported="false" />
+73-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:47:13-37
+74        <service
+74-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:48:9-52:72
+75            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+75-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:49:13-87
+76            android:enabled="true"
+76-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:50:13-35
+77            android:exported="false"
+77-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:51:13-37
+78            android:permission="android.permission.BIND_JOB_SERVICE" />
+78-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\ac2605da77983b497481f9e2091aefdd\play-services-measurement-17.2.2\AndroidManifest.xml:52:13-69
+79        <service
+79-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:27:9-33:19
+80            android:name="com.google.firebase.components.ComponentDiscoveryService"
+80-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:28:13-84
+81            android:directBootAware="true"
+81-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\dde1e8a06cf402a96f4895fbbb03d736\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+82            android:exported="false" >
+82-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:29:13-37
+83            <meta-data
+83-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:30:13-32:85
+84                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+84-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:31:17-139
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\3d8bed9a53529358f2c71b6407804b7b\play-services-measurement-api-17.2.2\AndroidManifest.xml:32:17-82
+86            <meta-data
+86-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+87                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+87-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+88                android:value="com.google.firebase.components.ComponentRegistrar" />
+88-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+89        </service>
+90
+91        <receiver
+91-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+92            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+92-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+93            android:exported="true"
+93-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+94            android:permission="com.google.android.c2dm.permission.SEND" >
+94-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+95            <intent-filter>
+95-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+96                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+96-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+96-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\946a39d7756c6b05aa38a853bdffc128\firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+97            </intent-filter>
+98        </receiver>
+99
+100        <provider
+100-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\dde1e8a06cf402a96f4895fbbb03d736\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+101            android:name="com.google.firebase.provider.FirebaseInitProvider"
+101-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\dde1e8a06cf402a96f4895fbbb03d736\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+102            android:authorities="com.example.dumps.firebaseinitprovider"
+102-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\dde1e8a06cf402a96f4895fbbb03d736\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+103            android:exported="false"
+103-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\dde1e8a06cf402a96f4895fbbb03d736\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+104            android:initOrder="100" />
+104-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\dde1e8a06cf402a96f4895fbbb03d736\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+105
+106        <activity
+106-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+107            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+107-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+108            android:exported="false"
+108-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+109            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+109-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\b989d78505a527364775fcd163b70614\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+110
+111        <meta-data
+111-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\c1714bb00a87a91702672cfecf89d703\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+112            android:name="com.google.android.gms.version"
+112-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\c1714bb00a87a91702672cfecf89d703\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+113            android:value="@integer/google_play_services_version" />
+113-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Rohit\.gradle\caches\transforms-2\files-2.1\c1714bb00a87a91702672cfecf89d703\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+114    </application>
+115
+116</manifest>
