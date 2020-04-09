@@ -18,6 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".GetDetails"></activity>
         <activity android:name=".CaptureImage" />
 
         <provider

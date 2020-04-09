@@ -11,12 +11,14 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.AssetFileDescriptor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -25,13 +27,21 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import org.tensorflow.lite.Interpreter;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+
+
 public class CaptureImage extends AppCompatActivity {
 
+
+    Interpreter tflite;
 
     ImageView imageView;
     Button button;
@@ -40,7 +50,9 @@ public class CaptureImage extends AppCompatActivity {
 
     String mCurrentPhotoPath;
     private static final String IMAGE_DIRECTORY_NAME = "DUMPS";
-
+    private int pic_clicked=0;
+    Button add_details;
+    private static final int GET_DETAILS_REQUEST_CODE =96;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,20 +61,60 @@ public class CaptureImage extends AppCompatActivity {
 
         imageView = (ImageView) findViewById(R.id.imageView);
         button = findViewById(R.id.btnCaptureImage);
-
+        add_details = (Button) findViewById(R.id.add_details_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    captureImage();
+                    pic_clicked = captureImage();
+                    //predict();
                 } else {
-                    captureImage2();
+                    pic_clicked = captureImage2();
+                }
+            }
+        });
+        add_details.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (pic_clicked == 1) {
+                    displayMessage(getBaseContext(), "Great picture !!! ");
+                    //button.setOnClickListener(null);
+                     /*final Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        get_details();
+                    }}, 2000);
+                    pic_clicked=0;*/
+                    Intent intent2=new Intent(CaptureImage.this,GetDetails.class);
+                    CaptureImage.this.startActivity(intent2);
+                    //startActivityForResult(intent2, GET_DETAILS_REQUEST_CODE);
+                    finish();
+                }
+                else
+                {
+                    displayMessage(getApplicationContext(),"Please click a picture of the dump");
                 }
             }
         });
     }
 
-    private void captureImage2() {
+
+/*
+    private void predict() {
+        try{
+            tflite = new Interpreter(loadModelFile());
+        }
+        catch (Exception e){
+            displayMessage(getBaseContext(),e.toString());
+        }
+
+
+        tflite.run(inputVal,outputVal); //both arguments are arrays
+
+    }
+*/
+    private int captureImage2() {
 
         try {
             Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -74,14 +126,16 @@ public class CaptureImage extends AppCompatActivity {
                 Uri photoUri = Uri.fromFile(photoFile);
                 cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
                 startActivityForResult(cameraIntent, CAPTURE_IMAGE_REQUEST);
+                return 1;
             }
 
         } catch (Exception e) {
             displayMessage(getBaseContext(), "Camera is not available" + e.toString());
+            return 0;
         }
     }
 
-    private void captureImage() {
+    private int captureImage() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             // Note to self : this below code asks for permission, try including it at start and see if it asks for permission by default
             // Never mind the above comment, onrequestpermissionresult calls captureimage if permissions are granted
@@ -96,19 +150,22 @@ public class CaptureImage extends AppCompatActivity {
                     Log.i("Dumps", photoFile.getAbsolutePath());
                     //Continue only if the photoFile was crated
                     if (photoFile != null) {
-                        displayMessage(getBaseContext(),"photofile not null");
+                        //displayMessage(getBaseContext(),"photofile not null");
                         Uri photoUri = FileProvider.getUriForFile(this, "com.example.dumps.fileprovider", photoFile);
                         takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
                         startActivityForResult(takePictureIntent, CAPTURE_IMAGE_REQUEST);
+                        return 1;
                     }
                 } catch (Exception e) {
                     displayMessage(getBaseContext(), e.getMessage().toString());
+                    return 0;
                 }
             } else {
                 displayMessage(getBaseContext(), "NULL, something went wrong ");
+                return 0;
             }
         }
-
+    return 0;
     }
 
     @Override
@@ -172,4 +229,21 @@ public class CaptureImage extends AppCompatActivity {
             }
         }
     }
+    /*
+    private MappedByteBuffer loadModelFile() throws IOException{
+        //Open model using input stream and memory map it to load
+        AssetFileDescriptor fileDescriptor=this.getAssets().openFd("converted_model.tflite");
+        FileInputStream inputStream =new FileInputStream(fileDescriptor.getFileDescriptor());
+        FileChannel fileChannel =inputStream.getChannel();
+        long startOffset=fileDescriptor.getStartOffset();
+        long declaredLength=fileDescriptor.getDeclaredLength();
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY,startOffset,declaredLength);
+    }
+
+     */
+
+
 }
+
+
+

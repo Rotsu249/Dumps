@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".GetDetails">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="ADD DUMP DETAILS"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="LANDMARKS"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/landmarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint='By the "XYZ Park", In front of the Supermarket etc'
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIZE OF GARBAGE"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/radio_group"
+        android:layout_height="116dp">
+
+        <RadioButton
+            android:id="@+id/garbage_bag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garbage Bag" />
+
+        <RadioButton
+            android:id="@+id/wheelbarrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wheelbarrow" />
+
+        <RadioButton
+            android:id="@+id/garbage_truck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Garbage Truck" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="ADDITIONAL INFORMATION" />
+
+    <EditText
+        android:id="@+id/extra_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Horrible smell, Needs more than 1 person etc"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/submit_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Submit" />
+
+</LinearLayout>
